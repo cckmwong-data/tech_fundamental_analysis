@@ -2,8 +2,8 @@ name: Financial Data Update
 
 on:
   schedule:
-    - cron: '0 18 * * 1-5' # Runs at 6:00 PM UTC every Monday-Friday (After Market hours)
-  workflow_dispatch:      # Adds a "Run" button so you can test it manually
+    - cron: '0 13 * * 1-5' 
+  workflow_dispatch:      
 
 jobs:
   build:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Updated version
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Updated version
         with:
-          python-version: '3.9'
+          python-version: '3.11' # Upgrading to 3.11 is also a good idea for 2026
 
       - name: Install Dependencies
         run: |
