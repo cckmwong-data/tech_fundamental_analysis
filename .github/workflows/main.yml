@@ -8,13 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # This forces the runner to use Node 24 and should silence the warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # Updated from v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v5 # Updated from v4
+        uses: actions/checkout@v4
         with:
           python-version: '3.9'
 
