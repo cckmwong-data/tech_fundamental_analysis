@@ -1,6 +1,6 @@
 # Quantimental Strategy (Part 1): Tech Sector Fundamental Dashboard
 
-"Quantimental" strategy comprisees of two parts, quantitative and fundamental analysis. This project synchronizes deep-dive fundamental analysis for Big Tech (**Google, Meta, Nvidia, Tesla**), which will integrate with a **[Deep Learning LSTM Autoencoder](https://github.com/cckmwong-data/stock_price_anomaly)** to identify market mispricings and price anomalies.
+"Quantimental" strategy comprises of two parts, quantitative and fundamental analysis. This project synchronizes deep-dive fundamental analysis for Big Tech (**Google, Meta, Nvidia, Tesla**), which integrates with a **[Deep Learning LSTM Autoencoder](https://github.com/cckmwong-data/stock_price_anomaly)** to identify market mispricings and price anomalies.
 
 ![](images/cover.png)
 
