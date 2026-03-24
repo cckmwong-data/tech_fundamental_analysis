@@ -2,7 +2,7 @@
 
 This project synchronizes deep-dive fundamental analysis for Big Tech (**Google, Meta, Nvidia, Tesla**) with a **Deep Learning LSTM Autoencoder** to identify market mispricings and price anomalies.
 
-![](images/valuation.png)
+![](images/cover.png)
 
 ---
 
