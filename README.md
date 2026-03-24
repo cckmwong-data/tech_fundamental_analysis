@@ -32,20 +32,24 @@ This project represents the first part of analysis - the Fundamental Core (Power
 
 ### 1. Intrinsic Valuation & Sensitivity
 Compare **Current Price** vs. **Intrinsic Value**. Use the interactive sliders to stress-test the valuation against different economic scenarios.
+
 ![](images/valuation.png)
 
 ### 2. Income Statement & Margin Analysis
 Track revenue growth and operational leverage. Monitor how COGS, R&D, and SG&A evolve as a percentage of total revenue.
+
 ![](images/IS4.png)
 
 ### 3. Balance Sheet & Liquidity
 Analyze solvency and working capital efficiency through the **Cash Conversion Cycle (CCC)** and **Quick Ratio** trends.
+
 ![](images/BS1.png)
 ![](images/BS4.png)
 
 ### 4. Cash Flow Dynamics
 A visual **Cash Flow Bridge** identifies the drivers of cash movement, distinguishing between organic growth and financing activities.
-![](images/CS2.png)
+
+![](images/CF2.png)
 
 ---
 
