@@ -9,7 +9,7 @@ This project synchronizes deep-dive fundamental analysis for Big Tech (**Google,
 ## The Integration: Fundamentals meet AI
 Most investment tools provide either financial data or technical indicators. This project integrates both to create a high-conviction decision engine:
 
-* **1. The Fundamental Core (Power BI):** Determines **Intrinsic Value** using a dynamic 10-year DCF model. It answers: *"What is this company actually worth?"*
+* **1. (This project) The Fundamental Core (Power BI):** Determines **Intrinsic Value** using a dynamic 10-year DCF model. It answers: *"What is this company actually worth?"*
 * **[2. The AI Layer (LSTM Autoencoder):](https://github.com/cckmwong-data/stock_price_anomaly)** Detects **Price Anomalies** in Tesla (TSLA) stock (2015-2025). It answers: *"Is the current market price deviating irrationally from historical patterns?"*
 
 **Strategic Use Case:** When the Power BI model shows a stock is undervalued, and the LSTM model flags a negative price anomaly (high reconstruction error), it signals a statistically significant **Mean Reversion** buying opportunity.
@@ -25,45 +25,45 @@ This project represents the first part of analysis - the Fundamental Core (Power
 * **Automated ETL:** Python scripts & GitHub Actions refresh the entire dataset every 24 hours.
 * **Dynamic Valuation:** Interactive 2-stage DCF engine with a WACC/Terminal Growth sensitivity matrix.
 * **Full Financial Stack:** Dedicated modules for Income Statement, Balance Sheet, and Cash Flow (including Cash Flow Bridges).
-* **Unsupervised Learning:** LSTM Autoencoder flags anomalies when the reconstruction error (MAE) exceeds the 95th percentile.
   
 ---
 
-## 📊 Dashboard Breakdown
+## Dashboard Breakdown
 
 ### 1. Intrinsic Valuation & Sensitivity
-<img src="image/valuation.jpg" width="900" alt="Valuation Dashboard">
+![](images/valuation.png)
 Compare **Current Price** vs. **Intrinsic Value**. Use the interactive sliders to stress-test the valuation against different economic scenarios.
 
 ### 2. Income Statement & Margin Analysis
-<img src="image/IS4.jpg" width="900" alt="Income Statement Analysis">
+![](images/IS4.png)
 Track revenue growth and operational leverage. Monitor how COGS, R&D, and SG&A evolve as a percentage of total revenue.
 
 ### 3. Balance Sheet & Liquidity
-<img src="image/BS2.png" width="900" alt="Balance Sheet Charts">
+![](images/BS1.png)
+![](images/BS4.png)
 Analyze solvency and working capital efficiency through the **Cash Conversion Cycle (CCC)** and **Quick Ratio** trends.
 
 ### 4. Cash Flow Dynamics
-<img src="image/CF2.png" width="900" alt="Cash Flow Bridge">
+![](images/CS4.png)
 A visual **Cash Flow Bridge** identifies the drivers of cash movement, distinguishing between organic growth and financing activities.
 
 ---
 
-## 🛠️ Skills Demonstrated
-* **Deep Learning:** Time-series anomaly detection using LSTM Autoencoders.
-* **Financial Engineering:** DCF Modeling, WACC, and Terminal Value calculations.
-* **Data Engineering:** Automating cloud workflows with GitHub Actions and Google Sheets API.
+## Skills Demonstrated
+* **Financial Modeling:** **Discounted Cash Flow (DCF)** analysis, **Weighted Average Cost of Capital (WACC)** calculation, Terminal Value estimation, and Ratio analysis (Liquidity, Solvency, Profitability).
+* **Data Engineering:** Automating workflows with **Python** and **GitHub Actions**; managing cloud-based data in **Google Sheets**.
 * **Business Intelligence:** Advanced Power BI (DAX, dynamic parameters, and UX design).
+* **ETL Pipeline Design:** Connecting disparate data sources into a streamlined, scheduled refresh architecture.
 
 ---
 
-## ⚙️ How the Pipeline Works
-1.  **Extract:** Python scripts fetch the latest 10-K/10-Q data.
-2.  **Automate:** GitHub Actions triggers the ETL process daily at 00:00 UTC.
+## How the Pipeline Works
+1.  **Extract:** Python scripts fetch the latest financial statements. Separately, Google Sheets uses internal formulas to pull live share prices and historical close data.
+2.  **Automate:** GitHub Actions triggers the ETL process daily at 23:00 UTC.
 3.  **Sync:** Cleaned data is pushed to Google Sheets (handling live price formulas).
 4.  **Visualize:** Power BI Service performs a scheduled refresh to update the dashboard.
 
 ---
 
-## ⚠️ Disclaimer
-*This project is for informational purposes only. The target prices and anomaly flags generated do not constitute financial advice.*
+## Author
+Carmen Wong
