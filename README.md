@@ -9,29 +9,24 @@ This project synchronizes deep-dive fundamental analysis for Big Tech (**Google,
 ## The Integration: Fundamentals meet AI
 Most investment tools provide either financial data or technical indicators. This project integrates both to create a high-conviction decision engine:
 
-* **The Fundamental Core (Power BI):** Determines **Intrinsic Value** using a dynamic 10-year DCF model. It answers: *"What is this company actually worth?"*
-* **The AI Layer (LSTM Autoencoder):** Detects **Price Anomalies** in Tesla (TSLA) stock (2015-2025). It answers: *"Is the current market price deviating irrationally from historical patterns?"*
+* **1. The Fundamental Core (Power BI):** Determines **Intrinsic Value** using a dynamic 10-year DCF model. It answers: *"What is this company actually worth?"*
+* **[2. The AI Layer (LSTM Autoencoder):](https://github.com/cckmwong-data/stock_price_anomaly)** Detects **Price Anomalies** in Tesla (TSLA) stock (2015-2025). It answers: *"Is the current market price deviating irrationally from historical patterns?"*
 
 **Strategic Use Case:** When the Power BI model shows a stock is undervalued, and the LSTM model flags a negative price anomaly (high reconstruction error), it signals a statistically significant **Mean Reversion** buying opportunity.
 
 ---
 
-## 📝 Project Overview
-This platform automates the end-to-end flow of financial intelligence. By scraping daily financial statements and stock prices via Python, it eliminates the "stale data" problem common in retail research. Users can interactively adjust WACC, growth rates, and risk-free rates to see real-time shifts in target prices.
-
-## ❗ Problem Statement
-* **Data Lag:** Manual financial tracking is too slow for modern markets.
-* **Static Models:** Traditional "Target Prices" don't allow for personalized risk assumptions.
-* **Disconnected Insights:** Fundamental health is rarely cross-referenced with algorithmic price oversight.
+## Project Overview
+This project represents the first part of analysis - the Fundamental Core (Power BI), which automates the end-to-end flow of financial data and analysis. By scraping daily financial statements and stock prices via Python and Google Sheet, it eliminates the "stale data" problem common in retail research. Users can interactively adjust growth rates, and risk-free rates to see real-time shifts in target prices.
 
 ---
 
-## ✨ Key Highlights
+## Key Highlights
 * **Automated ETL:** Python scripts & GitHub Actions refresh the entire dataset every 24 hours.
 * **Dynamic Valuation:** Interactive 2-stage DCF engine with a WACC/Terminal Growth sensitivity matrix.
-* **Unsupervised Learning:** LSTM Autoencoder flags anomalies when the reconstruction error (MAE) exceeds the 95th percentile.
 * **Full Financial Stack:** Dedicated modules for Income Statement, Balance Sheet, and Cash Flow (including Cash Flow Bridges).
-
+* **Unsupervised Learning:** LSTM Autoencoder flags anomalies when the reconstruction error (MAE) exceeds the 95th percentile.
+  
 ---
 
 ## 📊 Dashboard Breakdown
