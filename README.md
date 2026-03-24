@@ -1,6 +1,6 @@
 # Quantimental Intelligence: Tech Sector Fundamental Dashboard & AI Anomaly Detection
 
-This project synchronizes deep-dive fundamental analysis for Big Tech (**Google, Meta, Nvidia, Tesla**) with a **Deep Learning LSTM Autoencoder** to identify market mispricings and price anomalies.
+This project synchronizes deep-dive fundamental analysis for Big Tech (**Google, Meta, Nvidia, Tesla**) with a **[Deep Learning LSTM Autoencoder](https://github.com/cckmwong-data/stock_price_anomaly)** to identify market mispricings and price anomalies.
 
 ![](images/cover.png)
 
