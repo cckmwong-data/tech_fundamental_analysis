@@ -70,7 +70,7 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 1.  **Extract:** Python scripts scrape the latest 10-K/10-Q filings. Concurrently, Google Sheets pulls live share prices and historical data via native formulas.
 2.  **Automate:** **GitHub Actions** triggers the ETL process daily at **23:00 UTC** (post-US market close).
 3.  **Sync:** Cleaned and structured data is pushed to Google Sheets, serving as a centralized data warehouse.
-4.  **Visualize:** **Power BI Service** performs a scheduled refresh to update the cloud-hosted dashboard.
+4.  **Visualize:** **Power BI Service** performs a scheduled refresh at **00:00 UTC** to update the cloud-hosted dashboard.
 
 ---
 
