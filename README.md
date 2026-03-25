@@ -39,7 +39,7 @@ Compare **Intrinsic Value** vs. **Current Price**. Use interactive sliders to ad
 ![Valuation Dashboard](images/valuation.png)
 
 ### 2. Income Statement & Margin Analysis
-Monitor **revenue growth**, **operational leverage**, and **margin expansion**. Track how COGS, R&D, and SG&A evolve as a percentage of total revenue to identify scaling efficiency.
+Monitor **revenue growth** and **margin expansion**. Track how COGS, R&D, and SG&A evolve as a percentage of total revenue to identify scaling efficiency.
 
 ![Income Statement Analysis](images/IS4.png)
 
