@@ -19,7 +19,7 @@ Most investment tools provide either financial data or technical indicators in i
 ---
 
 ## Overview
-This repository focuses on the **Fundamental Core**, an end-to-end automated platform for financial data analysis. By orchestrating daily extraction of 10-K/10-Q statements and stock prices via Python and Google Sheets, it eliminates the "stale data" problem inherent in retail research. The dashboard is fully interactive, allowing users to stress-test target prices by adjusting WACC, growth rates, and risk-free assumptions in real-time.
+This repository focuses on the **Fundamental Core**, an end-to-end automated platform for financial data analysis. By orchestrating daily extraction of 10-K/10-Q statements (i.e. financial statements) and stock prices via Python and Google Sheets, it eliminates the "stale data" problem inherent in retail research. The dashboard is fully interactive, allowing users to stress-test target prices by adjusting WACC, growth rates, and risk-free assumptions in real-time.
 
 ---
 
@@ -60,7 +60,7 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 ---
 
 ## How the Pipeline Works
-1.  **Extract:** Python scripts scrape the latest 10-K/10-Q filings (i.e. financial statements). Concurrently, Google Sheets pulls live share prices and historical data via native formulas.
+1.  **Extract:** Python scripts scrape the latest 10-K/10-Q filings. Concurrently, Google Sheets pulls live share prices and historical data via native formulas.
 2.  **Automate:** **GitHub Actions** triggers the ETL process daily at **23:00 UTC** (post-US market close).
 3.  **Sync:** Cleaned and structured data is pushed to Google Sheets, serving as a centralized data warehouse.
 4.  **Visualize:** **Power BI Service** performs a scheduled refresh to update the cloud-hosted dashboard.
