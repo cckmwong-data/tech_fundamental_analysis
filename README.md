@@ -19,7 +19,7 @@ Most investment tools provide either financial data or technical indicators in i
 ---
 
 ## Overview
-This repository focuses on the **Fundamental Core**, an end-to-end automated platform for financial data analysis. By orchestrating daily extraction of 10-K/10-Q statements (i.e. financial statements) and stock prices via Python and Google Sheets, it eliminates the "stale data" problem inherent in retail research. The dashboard is fully interactive, allowing users to stress-test target prices by adjusting WACC, growth rates, and risk-free assumptions in real-time.
+This repository focuses on the **Fundamental Core**, an end-to-end automated platform for financial data analysis. By orchestrating daily extraction of 10-K/10-Q statements (i.e. financial statements) and stock prices via Python and Google Sheets, it eliminates the "stale data" problem inherent in retail research. The dashboard is fully interactive, allowing users to stress-test target prices by adjusting Weighted Average Cost of Capital (WACC), growth rates, and risk-free assumptions in real-time.
 
 ---
 
