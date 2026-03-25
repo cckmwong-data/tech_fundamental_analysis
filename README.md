@@ -56,7 +56,7 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 ---
 
 ## Skills Demonstrated
-✔ **Financial Modeling:** 2-Stage **Discounted Cash Flow (DCF)**, **WACC** calculation, Terminal Value estimation, and Ratio analysis (Liquidity, Solvency, Profitability).
+✔ **Financial Modeling:** 2-Stage **Discounted Cash Flow (DCF)**, WACC calculation, terminal value estimation, and ratio analysis (Liquidity, Solvency, Profitability).
 
 ✔ **Data Engineering:** Automating ETL workflows with **Python** and **GitHub Actions**; managing cloud data pipelines via **Google Sheets API**.
 
@@ -78,5 +78,5 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 *This project is for informational purposes only. The target prices and anomaly flags generated do not constitute financial advice. Always perform your own due diligence before making investment decisions.*
