@@ -1,75 +1,75 @@
-# Quantimental Strategy (Part 1): Tech Sector Fundamental Dashboard
+# Quantimental Strategy (Part 1): Tech Sector Fundamental Intelligence Dashboard
 
-The "Quantimental" approach represents the fusion of **Quantitative** and **Fundamental analysis**, combining the data-driven rigor of mathematical modeling with the deep structural insights of equity research.
+The **"Quantimental"** approach represents the fusion of **Quantitative** and **Fundamental analysis**, combining the data-driven rigor of mathematical modeling with the deep structural insights of equity research.
 
-This project serves as the foundational pillar of the strategy, providing a high-fidelity, automated fundamental analysis framework for the "Big Four" tech leaders: Google, Meta, Nvidia, and Tesla. It is designed to work in synergy with **[Part 2 (LSTM Autoencoder)](https://github.com/cckmwong-data/stock_price_anomaly)**, which utilizes Deep Learning to identify market mispricings and price anomalies through reconstruction error analysis.
+This project serves as the foundational pillar of the strategy, providing a high-fidelity, automated fundamental analysis framework for the "Big Four" tech leaders: **Google, Meta, Nvidia, and Tesla**. It is designed to work in synergy with **[Part 2: LSTM Autoencoder Anomaly Detection](https://github.com/cckmwong-data/stock_price_anomaly)**, which utilizes Deep Learning to identify market mispricings through reconstruction error analysis.
 
-![](images/cover.png)
+![Dashboard Cover](image/cover.jpg)
 
 ---
 
 ## The Integration: Fundamentals meet AI
-Most investment tools provide either financial data or technical indicators. This project integrates both to create a high-conviction decision engine:
+Most investment tools provide either financial data or technical indicators in isolation. This project integrates both to create a high-conviction decision engine:
 
-* **1. (This project) The Fundamental Core (Power BI):** Determines **Intrinsic Value** using a dynamic 10-year DCF model. It answers: *"What is this company actually worth?"*
-* **[2. The AI Layer (LSTM Autoencoder):](https://github.com/cckmwong-data/stock_price_anomaly)** Detects **Price Anomalies** in Tesla (TSLA) stock (2015-2025). It answers: *"Is the current market price deviating irrationally from historical patterns?"*
+* **1. The Fundamental Core (This Project):** Determines **Intrinsic Value** using a dynamic 2-stage DCF model. It answers: *"What is this company actually worth based on cash flow?"*
+* **[2. The AI Layer (LSTM Autoencoder):](https://github.com/cckmwong-data/stock_price_anomaly)** Detects **Price Anomalies** in Tesla (TSLA) stock (2015-2025). It answers: *"Is the current price action deviating irrationally from historical patterns?"*
 
-**Strategic Use Case:** When the Power BI model shows a stock is undervalued, and the LSTM model flags a negative price anomaly (high reconstruction error), it signals a statistically significant **Mean Reversion** buying opportunity.
+> **Strategic Use Case:** When the Power BI model identifies a stock as **fundamentally undervalued**, and the LSTM model flags a **negative price anomaly** (high reconstruction error during a price dip), it signals a statistically significant **Mean Reversion** buying opportunity.
 
 ---
 
-## Project Overview
-This project represents the first part of analysis - the Fundamental Core (Power BI), which automates the end-to-end flow of financial data and analysis. By scraping daily financial statements and stock prices via Python and Google Sheet, it eliminates the "stale data" problem common in retail research. Users can interactively adjust growth rates, and risk-free rates to see real-time shifts in target prices.
+## Overview
+This repository focuses on the **Fundamental Core**, an end-to-end automated platform for financial data analysis. By orchestrating daily extraction of 10-K/10-Q statements and stock prices via Python and Google Sheets, it eliminates the "stale data" problem inherent in retail research. The dashboard is fully interactive, allowing users to stress-test target prices by adjusting WACC, growth rates, and risk-free assumptions in real-time.
 
 ---
 
 ## Key Highlights
-* **Automated ETL:** Python scripts & GitHub Actions refresh the entire dataset every 24 hours.
-* **Dynamic Valuation:** Interactive 2-stage DCF engine with a WACC/Terminal Growth sensitivity matrix.
-* **Full Financial Stack:** Dedicated modules for Income Statement, Balance Sheet, and Cash Flow (including Cash Flow Bridges).
-  
+* **Automated ETL:** Python scripts and GitHub Actions refresh the entire financial dataset every 24 hours.
+* **Dynamic Valuation:** An interactive 2-stage DCF engine featuring a WACC vs. Terminal Growth sensitivity matrix.
+* **Real-Time Pricing:** Integration of live market data using `GOOGLEFINANCE` formulas to ensure valuation gaps are accurate to the latest market close.
+* **Full Financial Stack:** Deep-dive modules for Income Statement, Balance Sheet, and Cash Flow (including a visual Cash Flow Bridge).
+
 ---
 
 ## Dashboard Breakdown
 
 ### 1. Intrinsic Valuation & Sensitivity
-Compare **Current Price** vs. **Intrinsic Value**. Use the interactive sliders to stress-test the valuation against different economic scenarios.
-
-![](images/valuation.png)
+Compare **Intrinsic Value** vs. **Current Price**. Use interactive sliders to adjust the 10-year growth trajectory and discount rates to see immediate impacts on the target price.
+![Valuation Dashboard](image/valuation.jpg)
 
 ### 2. Income Statement & Margin Analysis
-Track revenue growth and operational leverage. Monitor how COGS, R&D, and SG&A evolve as a percentage of total revenue.
-
-![](images/IS4.png)
+Monitor revenue growth, operational leverage, and margin expansion. Track how COGS, R&D, and SG&A evolve as a percentage of total revenue to identify scaling efficiency.
+![Income Statement Analysis](image/IS4.jpg)
 
 ### 3. Balance Sheet & Liquidity
-Analyze solvency and working capital efficiency through the **Cash Conversion Cycle (CCC)** and **Quick Ratio** trends.
-
-![](images/BS1.png)
-![](images/BS4.png)
+Analyze solvency and working capital efficiency. This section highlights the **Cash Conversion Cycle (CCC)**, **Quick Ratio** trends, and debt profiles.
+![Balance Sheet Charts](image/BS2.png)
 
 ### 4. Cash Flow Dynamics
-A visual **Cash Flow Bridge** identifies the drivers of cash movement, distinguishing between organic growth and financing activities.
-
-![](images/CF2.png)
+A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, allowing for an "Earnings Quality" check by comparing Net Income to Free Cash Flow.
+![Cash Flow Bridge](image/CF2.png)
 
 ---
 
 ## Skills Demonstrated
-✔ **Financial Modeling:** **Discounted Cash Flow (DCF)** analysis, **Weighted Average Cost of Capital (WACC)** calculation, Terminal Value estimation, and Ratio analysis (Liquidity, Solvency, Profitability).
-✔ **Data Engineering:** Automating workflows with **Python** and **GitHub Actions**; managing cloud-based data in **Google Sheets**.
-✔ **Business Intelligence:** Advanced Power BI (DAX, dynamic parameters, and UX design).
-✔ **ETL Pipeline Design:** Connecting disparate data sources into a streamlined, scheduled refresh architecture.
+✔ **Financial Modeling:** 2-Stage **Discounted Cash Flow (DCF)**, **WACC** calculation, Terminal Value estimation, and Ratio analysis (Liquidity, Solvency, Profitability).
+✔ **Data Engineering:** Automating ETL workflows with **Python** and **GitHub Actions**; managing cloud data pipelines via **Google Sheets API**.
+✔ **Business Intelligence:** Advanced **Power BI** development (DAX, dynamic parameters, and user-centric UX design).
+✔ **System Architecture:** Designing a synchronized, multi-source data refresh architecture.
 
 ---
 
 ## How the Pipeline Works
-1.  **Extract:** Python scripts fetch the latest financial statements. Separately, Google Sheets uses internal formulas to pull live share prices and historical close data.
-2.  **Automate:** GitHub Actions triggers the ETL process daily at 23:00 UTC.
-3.  **Sync:** Cleaned data is pushed to Google Sheets (handling live price formulas).
-4.  **Visualize:** Power BI Service performs a scheduled refresh to update the dashboard.
+1.  **Extract:** Python scripts scrape the latest **10-K/10-Q filings**. Concurrently, Google Sheets pulls live share prices and historical data via native formulas.
+2.  **Automate:** **GitHub Actions** triggers the ETL process daily at **23:00 UTC** (post-US market close).
+3.  **Sync:** Cleaned and structured data is pushed to Google Sheets, serving as a centralized data warehouse.
+4.  **Visualize:** **Power BI Service** performs a scheduled refresh to update the cloud-hosted dashboard.
 
 ---
 
-## Author
-Carmen Wong
+**Author:** Carmen Wong
+
+---
+
+## ⚠️ Disclaimer
+*This project is for informational purposes only. The target prices and anomaly flags generated do not constitute financial advice. Always perform your own due diligence before making investment decisions.*
