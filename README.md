@@ -57,8 +57,11 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 
 ## Skills Demonstrated
 ✔ **Financial Modeling:** 2-Stage **Discounted Cash Flow (DCF)**, **WACC** calculation, Terminal Value estimation, and Ratio analysis (Liquidity, Solvency, Profitability).
+
 ✔ **Data Engineering:** Automating ETL workflows with **Python** and **GitHub Actions**; managing cloud data pipelines via **Google Sheets API**.
+
 ✔ **Business Intelligence:** Advanced **Power BI** development (DAX, dynamic parameters, and user-centric UX design).
+
 ✔ **System Architecture:** Designing a synchronized, multi-source data refresh architecture.
 
 ---
