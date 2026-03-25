@@ -2,7 +2,7 @@
 
 The **"Quantimental"** approach represents the fusion of **Quantitative** and **Fundamental analysis**, combining the data-driven rigor of mathematical modeling with the deep structural insights of equity research.
 
-This project serves as the foundational pillar of the strategy, providing a high-fidelity, automated fundamental analysis framework for the "Big Four" tech leaders: **Google, Meta, Nvidia, and Tesla**. It is designed to work in synergy with **[Part 2: LSTM Autoencoder Anomaly Detection](https://github.com/cckmwong-data/stock_price_anomaly)**, which utilizes Deep Learning to identify market mispricings through reconstruction error analysis.
+This project serves as the foundational pillar of the strategy, providing an automated fundamental analysis framework for the "Big Four" tech leaders: **Google, Meta, Nvidia, and Tesla**. It is designed to work in synergy with **[Part 2: LSTM Autoencoder Anomaly Detection](https://github.com/cckmwong-data/stock_price_anomaly)**, which utilizes Deep Learning to identify market mispricings through reconstruction error analysis.
 
 ![Dashboard Cover](images/cover.png)
 
