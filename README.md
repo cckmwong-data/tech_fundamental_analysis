@@ -4,7 +4,7 @@ The **"Quantimental"** approach represents the fusion of **Quantitative** and **
 
 This project serves as the foundational pillar of the strategy, providing a high-fidelity, automated fundamental analysis framework for the "Big Four" tech leaders: **Google, Meta, Nvidia, and Tesla**. It is designed to work in synergy with **[Part 2: LSTM Autoencoder Anomaly Detection](https://github.com/cckmwong-data/stock_price_anomaly)**, which utilizes Deep Learning to identify market mispricings through reconstruction error analysis.
 
-![Dashboard Cover](images/cover.jpg)
+![Dashboard Cover](images/cover.png)
 
 ---
 
@@ -35,11 +35,11 @@ This repository focuses on the **Fundamental Core**, an end-to-end automated pla
 
 ### 1. Intrinsic Valuation & Sensitivity
 Compare **Intrinsic Value** vs. **Current Price**. Use interactive sliders to adjust the 10-year growth trajectory and discount rates to see immediate impacts on the target price.
-![Valuation Dashboard](images/valuation.jpg)
+![Valuation Dashboard](images/valuation.png)
 
 ### 2. Income Statement & Margin Analysis
 Monitor revenue growth, operational leverage, and margin expansion. Track how COGS, R&D, and SG&A evolve as a percentage of total revenue to identify scaling efficiency.
-![Income Statement Analysis](images/IS4.jpg)
+![Income Statement Analysis](images/IS4.png)
 
 ### 3. Balance Sheet & Liquidity
 Analyze solvency and working capital efficiency. This section highlights the **Cash Conversion Cycle (CCC)**, **Quick Ratio** trends, and debt profiles.
