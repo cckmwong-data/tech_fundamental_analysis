@@ -35,18 +35,22 @@ This repository focuses on the **Fundamental Core**, an end-to-end automated pla
 
 ### 1. Intrinsic Valuation & Sensitivity
 Compare **Intrinsic Value** vs. **Current Price**. Use interactive sliders to adjust the 10-year growth trajectory and discount rates to see immediate impacts on the target price.
+
 ![Valuation Dashboard](images/valuation.png)
 
 ### 2. Income Statement & Margin Analysis
 Monitor revenue growth, operational leverage, and margin expansion. Track how COGS, R&D, and SG&A evolve as a percentage of total revenue to identify scaling efficiency.
+
 ![Income Statement Analysis](images/IS4.png)
 
 ### 3. Balance Sheet & Liquidity
 Analyze solvency and working capital efficiency. This section highlights the **Cash Conversion Cycle (CCC)**, **Quick Ratio** trends, and debt profiles.
+
 ![Balance Sheet Charts](images/BS2.png)
 
 ### 4. Cash Flow Dynamics
 A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, allowing for an "Earnings Quality" check by comparing Net Income to Free Cash Flow.
+
 ![Cash Flow Bridge](images/CF2.png)
 
 ---
