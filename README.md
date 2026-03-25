@@ -4,7 +4,7 @@ The **"Quantimental"** approach represents the fusion of **Quantitative** and **
 
 This project serves as the foundational pillar of the strategy, providing a high-fidelity, automated fundamental analysis framework for the "Big Four" tech leaders: **Google, Meta, Nvidia, and Tesla**. It is designed to work in synergy with **[Part 2: LSTM Autoencoder Anomaly Detection](https://github.com/cckmwong-data/stock_price_anomaly)**, which utilizes Deep Learning to identify market mispricings through reconstruction error analysis.
 
-![Dashboard Cover](image/cover.jpg)
+![Dashboard Cover](images/cover.jpg)
 
 ---
 
@@ -35,19 +35,19 @@ This repository focuses on the **Fundamental Core**, an end-to-end automated pla
 
 ### 1. Intrinsic Valuation & Sensitivity
 Compare **Intrinsic Value** vs. **Current Price**. Use interactive sliders to adjust the 10-year growth trajectory and discount rates to see immediate impacts on the target price.
-![Valuation Dashboard](image/valuation.jpg)
+![Valuation Dashboard](images/valuation.jpg)
 
 ### 2. Income Statement & Margin Analysis
 Monitor revenue growth, operational leverage, and margin expansion. Track how COGS, R&D, and SG&A evolve as a percentage of total revenue to identify scaling efficiency.
-![Income Statement Analysis](image/IS4.jpg)
+![Income Statement Analysis](images/IS4.jpg)
 
 ### 3. Balance Sheet & Liquidity
 Analyze solvency and working capital efficiency. This section highlights the **Cash Conversion Cycle (CCC)**, **Quick Ratio** trends, and debt profiles.
-![Balance Sheet Charts](image/BS2.png)
+![Balance Sheet Charts](images/BS2.png)
 
 ### 4. Cash Flow Dynamics
 A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, allowing for an "Earnings Quality" check by comparing Net Income to Free Cash Flow.
-![Cash Flow Bridge](image/CF2.png)
+![Cash Flow Bridge](images/CF2.png)
 
 ---
 
