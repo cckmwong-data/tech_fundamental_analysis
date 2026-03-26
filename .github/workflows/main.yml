@@ -1,14 +1,16 @@
-name: Financial Data Update (Showcase Version)
+# Disclaimer: this is only to showcase the content of YAML file and is not executable.
+# The actual one is scheduled to be in another private Github repo.
+
+name: Financial Data Update
 
 on:
-  # Scheduled to run at 23:00 UTC, Monday through Friday
   schedule:
     - cron: '0 23 * * 1-5'
-  # Allows manual triggering for demonstration
   workflow_dispatch:
 
 jobs:
   build:
+    if: false  # prevents execution for showcase purposes
     runs-on: ubuntu-latest
 
     steps:
@@ -21,13 +23,9 @@ jobs:
           python-version: '3.9'
 
       - name: Install Dependencies
-        run: |
-          # pip install -r requirements.txt
-          echo "Skipping installation for showcase..."
+        run: pip install -r requirements.txt
 
       - name: Run Extraction Script
         env:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-        run: |
-          # python scripts/extract_finance.py
-          echo "Extraction script would run here in a production environment."
+        run: python scripts/extract_finance.py
