@@ -79,4 +79,4 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 ---
 
 ## Disclaimer
-*This project is for informational purposes only. The target prices and anomaly flags generated do not constitute financial advice. Always perform your own due diligence before making investment decisions.*
+*This project is for informational purposes only. The target prices generated do not constitute financial advice. Always perform your own due diligence before making investment decisions.*
