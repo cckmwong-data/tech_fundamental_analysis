@@ -1,8 +1,10 @@
-name: Financial Data Update
+name: Financial Data Update (Showcase Version)
 
 on:
+  # Scheduled to run at 23:00 UTC, Monday through Friday
   schedule:
     - cron: '0 23 * * 1-5'
+  # Allows manual triggering for demonstration
   workflow_dispatch:
 
 jobs:
@@ -19,9 +21,13 @@ jobs:
           python-version: '3.9'
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
+        run: |
+          # pip install -r requirements.txt
+          echo "Skipping installation for showcase..."
 
       - name: Run Extraction Script
         env:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-        run: python scripts/extract_finance.py
+        run: |
+          # python scripts/extract_finance.py
+          echo "Extraction script would run here in a production environment."
