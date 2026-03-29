@@ -8,7 +8,7 @@ The **"Quantimental"** approach represents the fusion of **Quantitative** and **
 
 ---
 
-## The Integration: Fundamentals meet AI
+## The Integration: Fundamentals + Technical Analysis
 Most investment tools provide either financial data or technical indicators in isolation. This project integrates both to create a high-conviction decision engine:
 
 * **[1. The Fundamental Core (This Project)](https://app.powerbi.com/view?r=eyJrIjoiMWRiYmE1ZGQtY2FlNi00N2EyLTllNmQtMTEwOTQyOGIxMTM5IiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D):** Determines **Intrinsic Value** using a dynamic 2-stage DCF model. It answers: *"What is this company actually worth based on cash flow?"*
