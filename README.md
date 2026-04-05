@@ -64,6 +64,10 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 
 ✔ **System Architecture:** Designing a synchronized, multi-source data refresh architecture.
 
+✔ **Data Modeling:** A Star Schema is designed to bridge historical financial performance with forward-looking valuation metrics. At its core, the model relates a long-format Financial Statements fact table and a daily Stock Prices fact table to shared dimensions, including DimStocks for company metadata and DimAccounts for standardized financial reporting hierarchies. 
+
+![Star Schema](images/star.png)
+
 ---
 
 ## How the Pipeline Works
